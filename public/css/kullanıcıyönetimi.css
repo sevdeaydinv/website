@@ -1,0 +1,122 @@
+/* Genel Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gövde Stili */
+body {
+    font-family: 'Arial', sans-serif; /* Web sitesi fontunuza göre değiştirin */
+    background-color: #f9f9f9; /* Daha nötr bir arka plan rengi */
+    color: #333; /* Genel metin rengi */
+}
+
+/* Ana Konteyner */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* Daha yumuşak bir arka plan rengi */
+}
+
+/* Form Konteyneri */
+.form_container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+}
+
+/* Formlar */
+.create_form, .update_form {
+    display: none;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Butonlar */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.addbtn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button.addbtn:hover {
+    background-color: #0056b3;
+}
+
+button[type="button"] {
+    background-color: #28a745;
+    color: #fff;
+}
+
+button[type="button"]:hover {
+    background-color: #218838;
+}
+
+/* Tablo */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.table th, .table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-weight: bold;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mobil Tasarım */
+@media screen and (max-width: 400px) {
+    .form_container {
+        width: 95%;
+    }
+
+    form input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

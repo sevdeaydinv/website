@@ -1,0 +1,66 @@
+.sidebar {
+    flex: 3;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+   
+ }
+ 
+ .sidebar .area {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 30px;
+ }
+ 
+ .sidebar h3 {
+    width: 100%;
+    margin-bottom: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    position: relative;
+ }
+ 
+ .sidebar h3::after {
+    content: '';
+    width: 50%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+ }
+ 
+ .sidebar img {
+   width:150px;
+   height:150px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 2px solid #ccc;
+  
+ }
+ 
+ .sidebar .categories .p {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family:'Times New Roman', Times, serif;
+ }
+ 
+ 
+ 
+ .sidebar a {
+    font-family:'Times New Roman', Times, serif;
+    display: block;
+    padding: 3px;
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.03);
+ }
+ .sidebar a:nth-child(2n + 1) {
+    background-color: rgba(0, 0, 0, 0.08);
+ }
+ 
+ 
